@@ -1,9 +1,12 @@
+
 <?php 
 	/* Author: Cozy👽 */
 
 
 	include ('../core/connection.php');
-	include ('../core/functions/main.php');
+    include ('../core/functions/main.php');
+    
+
 	if(isset($_SESSION['loggedin'])===false){
 		header('Location: ../index.php');
 	}else{
@@ -11,10 +14,12 @@
  	if($_POST){
 		$productName = $_POST['productName'];
         $productDecscription = $_POST['productDescription'];
-        $price = $_POST['price'];
+        $thePrice = $_POST['price'];
+        $price = floatval($thePrice);
         $productCategory = $_POST['productCategory'];
         $productTarget = $_POST['productTarget'];
-        $productQuantity = $_POST['productQuantity'];
+        $theProductQuantity = $_POST['productQuantity'];
+        $productQuantity = intval($theProductQuantity);
         
         
 
@@ -41,8 +46,8 @@
                             move_uploaded_file($file_temp, $file_path);	
 
                             			 	
-							$query = $pdo->prepare("INSERT INTO `buymore`.`men_products` ( `productName`, `productDescription`,`price`, `product_imagePath`, 'productQuantity', `productCategory`)
-                             VALUES ( ?, ?, ?, ?, ?, ? )");
+							$query = $pdo->prepare("INSERT INTO `buymore`.`men_products` ( `productID` ,`productName`, `productDescription`,`price`, `product_imagePath`, `productQuantity`, `productCategory`)
+                             VALUES ( NULL,?, ?, ?, ?, ?, ? )");
 							$query->bindValue(1, $productName);	
 							$query->bindValue(2, $productDecscription);	
 							$query->bindValue(3, $price);	
@@ -50,7 +55,8 @@
                             $query->bindValue(5, $productQuantity);
                             $query->bindValue(6, $productCategory);
                             
-                             $query->execute();	
+                            $query -> execute(); 
+                            //$query->execute(array($productName,$productDecscription,$price,$file_path,$productQuantity,$productCategory));	
                              
                              //echo "Insertion Success";
                              //echo $productCategory;
