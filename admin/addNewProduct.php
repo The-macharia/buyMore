@@ -81,6 +81,23 @@
     <script src="../ckeditor/ckeditor.js"></script> <!-- CK Editor-->
 </head>
 <body>
+<header>
+
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="index.php">BuyMore</a>
+</div>
+<ul class="nav navbar-nav">
+<li><a href="index.php">Home</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<button type="button" class="btn btn-info">
+<span class="glyphicon glyphicon-log-out">LogOut</span>
+</button>
+</ul>
+</div>
+</nav></header>
 <div>
 <form action="addNewProduct.php" method="POST" enctype="multipart/form-data">
     <label for="productName">Product Name</label><br>
