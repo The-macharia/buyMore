@@ -15,11 +15,11 @@
 		$productName = $_POST['productName'];
         $productDecscription = $_POST['productDescription'];
         $thePrice = $_POST['price'];
-        $price = floatval($thePrice);
+        $price = floatval($thePrice); // Make price a double
         $productCategory = $_POST['productCategory'];
         $productTarget = $_POST['productTarget'];
         $theProductQuantity = $_POST['productQuantity'];
-        $productQuantity = intval($theProductQuantity);
+        $productQuantity = intval($theProductQuantity); // Make Product Quantity an Integer
         
         
 
