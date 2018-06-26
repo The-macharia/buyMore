@@ -6,8 +6,8 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/style.css" />
-    <script src="main.js"></script>
-    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
 </head>
 <body>
