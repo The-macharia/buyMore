@@ -6,3 +6,6 @@
 @import 'font-awesome.min.css';
 @import 'custom-icon.css';
 
+.pageBelowNav{
+    margin-top: 80px;
+}
