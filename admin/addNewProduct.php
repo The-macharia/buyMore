@@ -46,7 +46,7 @@
                             move_uploaded_file($file_temp, $file_path);	
 
                             			 	
-							$query = $pdo->prepare("INSERT INTO `buymore`.`men_products` ( `productID` ,`productName`, `productDescription`,`price`, `product_imagePath`, `productQuantity`, `productCategory`)
+							$query = $pdo->prepare("INSERT INTO `buymore`.`$productTarget` ( `productID` ,`productName`, `productDescription`,`price`, `product_imagePath`, `productQuantity`, `productCategory`)
                              VALUES ( NULL,?, ?, ?, ?, ?, ? )");
 							$query->bindValue(1, $productName);	
 							$query->bindValue(2, $productDecscription);	
