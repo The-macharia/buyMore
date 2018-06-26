@@ -10,7 +10,7 @@
 	if(isset($_SESSION['loggedin'])===false){
 		header('Location: ../index.php');
 	}else{
-	//check if user Publish a post
+	//Check if Admin Publish a Product
  	if($_POST){
 		$productName = $_POST['productName'];
         $productDecscription = $_POST['productDescription'];
@@ -87,7 +87,7 @@
     <script src="../ckeditor/ckeditor.js"></script> <!-- CK Editor-->
 </head>
 <body>
-<header>
+<header> <!-- To Style the header here -->
 
 <nav class="navbar navbar-inverse">
 <div class="container-fluid">
@@ -104,7 +104,7 @@
 </ul>
 </div>
 </nav></header>
-<div>
+<div> <!-- To Style the product adding form here -->
 <form action="addNewProduct.php" method="POST" enctype="multipart/form-data">
     <label for="productName">Product Name</label><br>
     <input type="text" name="productName" id="" ><br />
