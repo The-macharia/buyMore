@@ -13,6 +13,9 @@
 
   
     <link rel="icon" href="img/core-img/favicon.ico">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 
    
     <link rel="stylesheet" href="CSS/style.css">
@@ -79,10 +82,10 @@
                                     </li>
                                     
                                     <li><a href="contact.php">Contact Us</a></li>
-                                    <li><div class="search-area">
-                                        <form action="#" method="post">
-                                            <input type="search" name="search" id="headerSearch" placeholder="Type for search">
-                                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    <li><form class="form-inline" action="/action_page.php">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                                    <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+                                    </form></li>
                                         </form>
                                     </div>  </li>
                                 </ul>
