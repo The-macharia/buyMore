@@ -118,7 +118,8 @@
 <div class="container">
 <h4>Featured in Men</h4>
 <div class="row">
-<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="images/watch.jpg" alt="" width="220" height="220"></div>
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="images/watch.jpg" alt="" width="220" height="220">
+<button type="button" class="btn btn-primary">Add to Cart</button></div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="images/official.jpg" alt="" width="220" height="220"></div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="images/shirt.jpg" alt="" width="220" height="220"></div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="images/shoe.jpg" alt="" width="220" height="220"></div>
