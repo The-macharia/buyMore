@@ -65,13 +65,16 @@
         <a class="dropdown-item" href="#">Shoes</a>
       </div>
     </li>
-    <li><form class="form-inline" action="/action_page.php">
+    </ul>
+  <ul class="navbar-nav ml-auto">
+  <li><form class="form-inline" action="/action_page.php">
     <input class="form-control mr-sm-2" type="text" placeholder="Search">
-    <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+    <button class="btn btn-success mr-sm-2" type="submit"><i class="fas fa-search"></i></button>
   </form></li>
-  <li class="nav-item navbar-right mr-auto"><a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
-  <li class="nav-item navbar-right mr-auto"><a href="#"><i class="far fa-user fa-2x"></i></a></li>
-  </ul>
+  <!-- Shopping Cart and User Icons from font-awesome -->
+  <li class="nav-item navbar-right mr-sm-4"><a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+  <li class="nav-item navbar-right mr-sm-2"><a href="#"><i class="far fa-user fa-2x"></i></a></li></ul>
+  
 </nav>
 
 <div class="container">
