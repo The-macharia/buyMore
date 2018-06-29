@@ -3,9 +3,9 @@
 ## To Use this on your local machines check the connection class on the core folder
 Use the database credentials on the connection.php file as follows:
 $pdo = new PDO('mysql:host=localhost;dbname=buyMore', 'root', ''); you can add optional port numbers and login credentials depending on your db
-$pdo = new PDO('mysql:host=localhost:3306;dbname=buyMore', 'root', '') default Xammp settings
+$pdo = new PDO('mysql:host=localhost:3306;dbname=buyMore', 'root', '') default Xampp settings
 
-create a database call buymore and run the following queries
+create a database named buymore and run the following queries
 ## Admin Table
 CREATE TABLE `admin` (
   `adminID` int(11) NOT NULL AUTO_INCREMENT,
